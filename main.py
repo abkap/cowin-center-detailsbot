@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime,timedelta
 clear = lambda:system('cls')
-#msg = """""" #empty message 
+#msg = """""" #empty message
 send_details = False
 tomorrow = datetime.now() + timedelta(days=1)
 date = tomorrow.strftime("%d-%m-%Y")
