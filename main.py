@@ -68,7 +68,11 @@ def findLoc(send_details):
     except Exception as e:
         print("exception occured in url \n",e)
         exit()
-    res = requests.get(url)
+    headers = {
+    "accept-encoding": "gzip, deflate, br",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+    }
+    res = requests.get(url,headers=headers)
     #create a file called 'file.json' in the current directory by yourself to store the response
     with open("file.json","wb") as f:
         f.write(res.content)
