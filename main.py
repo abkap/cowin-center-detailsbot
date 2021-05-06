@@ -106,8 +106,6 @@ def findLoc(send_details):
             print("\n")
             if center["pincode"] in [670591,670592]: #To get mail only for the closest one. Otherwise it won't send me the email containg list. You can add pincode near to your place
                 send_details = True
-
-
         # print(msg) #remove comment only if want to display msg html code
         try:
             if send_details == True:
